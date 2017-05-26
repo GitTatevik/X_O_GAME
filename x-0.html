@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>X-O Game</title>
+	<style>
+	
+	
+@font-face{
+font-family:"anun";
+src:url('EagleLake-Regular.ttf');
+}
+	
+	body{
+min-width:600px;
+	background-image:url('images/table.jpg');
+	
+	font-family: 'anun';
+	text-align:center;
+	display:flex;
+	}
+	#container{
+	margin: 100px auto;
+		height:420px;
+		width:420px;
+		display:flex;
+		flex-wrap:wrap;
+		background-color:#89c889;
+		opacity:0.84;
+	}
+	
+	.items{
+	font-size:48px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height: 140px;
+	width:140px;
+	border:2px solid #534343;
+	box-sizing:border-box;
+	background-repeat:no-repeat;
+	background-size:cover;
+	
+	}
+	
+	
+	.div{
+	flex-direction:column;
+	position:absolute;
+	align-self:center;
+	left:37%;
+	display:flex;
+	width:26%;
+	background-color:white;
+	opacity:.8;
+	height:160px;
+	z-index:10;
+	border-radius:1px;
+	justify-content:center;
+	align-items:center;
+	font-size:18px;
+	font-family:sans-serif;
+	padding:2px;
+	
+	
+	}
+	
+	.input{
+		width:60px;
+		height:30px;
+		
+	}
+	
+	</style>
+</head>
+<body>
+	<template id="template">
+		
+		<div id="victory" class="div">Congratulations, you won!
+		
+		<button onclick="removeDiv(event)" class="input">Ok!</button>
+		<!--  js
+		let button1 = document.createElement("button");
+		button1.addEventListener("click", removeDiv );
+		button1.onclick = removeDiv; -->
+		</div>
+		<div id="draw"class="div">Draw! Click 'OK' to start the game again
+		
+		<button onclick="removeDiv(event)" class="input">Ok!</button>
+		
+		</div>
+	</template>
+		<script src="js/x-0.js"></script>
+</body>
+</html>
+
+
