@@ -1,2 +1,2 @@
-# X_O_GAMe
-3x3 board , first trial
+# X_O_GAME, 3x3 board
+ 
